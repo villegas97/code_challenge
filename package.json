@@ -1,0 +1,33 @@
+{
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "jest": "^28.1.1"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "name": "code_challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "lintef-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "server": "node ./lib/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/villegas97/code_challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/villegas97/code_challenge/issues"
+  },
+  "homepage": "https://github.com/villegas97/code_challenge#readme",
+  "description": ""
+}
