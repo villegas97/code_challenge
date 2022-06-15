@@ -6,4 +6,9 @@ describe("Pruebas de unidad de StudentService", () => {
     const file = Reader.readJsonFile("visualpartners.json");
     expect(students).toMatchObject(file);
   });
+
+  test("2) getStudentEmail() test", () => {
+    const emails = StudentController.getStudentEmail();
+    expect(emails[1]).toBe("Sexton@visualpartnership.xyz");
+  });
 });
